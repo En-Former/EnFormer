@@ -9,23 +9,23 @@ Recent advances in visual representation learning have seen the rise of clusteri
 ### ImageNet-1K pre-trained models for classification
 |    name    | resolution | epochs | acc@1 | #params | FLOPs | throughput  |       model       |
 |:----------:|:----------:|:------:|:-----:|:-------:|:-----:|:-----------:|:-----------------:|
-| EnFormer-S |  224x224   |  310   | 78.9  |  8.1M   | 1.1G  | 1476.5img/s | [model](https://) |
-| EnFormer-B |  224x224   |  310   | 81.2  |  14.8M  | 2.5G  | 1075.5img/s | [model](https://) |
-| EnFormer-L |  224x224   |  310   | 82.6  |  29.4M  | 4.8G  | 621.7img/s  | [model](https://) |
+| EnFormer-S |  224x224   |  310   | 78.9  |  8.1M   | 1.1G  | 1476.5img/s |    Coming Soon    |
+| EnFormer-B |  224x224   |  310   | 81.2  |  14.8M  | 2.5G  | 1075.5img/s |    Coming Soon    |
+| EnFormer-L |  224x224   |  310   | 82.6  |  29.4M  | 4.8G  | 621.7img/s  |    Coming Soon    |
 
 ### COCO2017 fine-tuned models for object detection and instance segmentation
 |    name     |   Method   | Lr Schd | box mAP | mask mAP | #params | Fine-tuned Model  |
 |:-----------:|:----------:|:-------:|:-------:|:--------:|:-------:|:-----------------:|
-| EnFormer-S  | Mask R-CNN |   1x    |  41.3   |   38.1   |  28.2M  | [model](https://) |
-| EnFormer-B  | Mask R-CNN |   1x    |  42.8   |   39.3   |  35.0M  | [model](https://) |
-| EnFormer-L  | Mask R-CNN |   1x    |  44.0   |   40.0   |  50.3M  | [model](https://) |
+| EnFormer-S  | Mask R-CNN |   1x    |  41.3   |   38.1   |  28.2M  |    Coming Soon    |
+| EnFormer-B  | Mask R-CNN |   1x    |  42.8   |   39.3   |  35.0M  |    Coming Soon    |
+| EnFormer-L  | Mask R-CNN |   1x    |  44.0   |   40.0   |  50.3M  |    Coming Soon    |
 
 ### ADE20K fine-tuned models for semantic segmentation
 |    name    |    Method    | Lr Schd | mIoU | #params | Fine-tuned Model  |
 |:----------:|:------------:|:-------:|:----:|:-------:|:-----------------:|
-| EnFormer-S | Semantic FPN |   80k   | 43.3 |  12.3M  | [model](https://) |
-| EnFormer-B | Semantic FPN |   80k   | 44.3 |  19.3M  | [model](https://) |
-| EnFormer-L | Semantic FPN |   80k   | 46.6 |  34.6M  | [model](https://) |
+| EnFormer-S | Semantic FPN |   80k   | 43.3 |  12.3M  |    Coming Soon    |
+| EnFormer-B | Semantic FPN |   80k   | 44.3 |  19.3M  |    Coming Soon    |
+| EnFormer-L | Semantic FPN |   80k   | 46.6 |  34.6M  |    Coming Soon    |
 
 
 ## Installation
@@ -50,10 +50,6 @@ Please refer to [detection/README.md](detection/README.md) for details.
 Please refer to [segmentation/README.md](segmentation/README.md) for details.
 
 
-## Acknowledgment
-Our implementation is mainly based on [FEC](https://github.com/guikunchen/FEC/), [PoolFormer](https://github.com/sail-sg/poolformer), [pytorch-image-models](https://github.com/rwightman/pytorch-image-models), [mmdetection](https://github.com/open-mmlab/mmdetection), [mmsegmentation](https://github.com/open-mmlab/mmsegmentation). We gratefully thank the authors for their wonderful works.
-
-
 ## LICENSE
 This project is released under the [Apache 2.0 license](LICENSE).
 
@@ -61,3 +57,4 @@ This project is released under the [Apache 2.0 license](LICENSE).
 [//]: # (## Citation)
 
 [//]: # (To be continued...)
+
