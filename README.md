@@ -1,5 +1,7 @@
 # Deep Ensemble Clustering for Visual Representation Learning
 
+![EnFormer Framework](assets/EnFormer_framework.png)
+
 ## Abstract
 Recent advances in visual representation learning have seen the rise of clustering-based vision backbones, which adopt clustering as a core paradigm for feature extraction. However, existing clustering-based backbones typically rely on a single clustering algorithm, whose inherent inductive bias limits their representational capacity. To address this, we propose EnFormer, which embeds ensemble clustering as a core component of feature extraction. EnFormer structures feature extraction around two steps: (i) Ensemble Generation, where several differentiable base clustering methods are introduced to capture diverse semantic structures; and (ii) Consensus Aggregation, which employs a differentiable mechanism to fuse the results of all base clusterings to reconstruct refined visual features. Extensive experiments show that EnFormer consistently outperforms existing clustering-based backbones across core vision tasks, with higher performance and significantly improved throughput.
 
