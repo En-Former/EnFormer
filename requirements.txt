@@ -6,6 +6,3 @@ yapf==0.40.1
 scikit-learn==1.3.2
 ipython==8.15.0
 numpy==1.26.4
-mmcv-full==1.6.0
-mmsegmentation==0.24.0
-mmdet==2.24.0
