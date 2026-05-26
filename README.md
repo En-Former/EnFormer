@@ -7,25 +7,25 @@ Recent advances in visual representation learning have seen the rise of clusteri
 ## Results and Pre-trained/Fine-tuned Models
 
 ### ImageNet-1K pre-trained models for classification
-|    name    | resolution | epochs | acc@1 | #params | FLOPs | throughput  |       model       |
-|:----------:|:----------:|:------:|:-----:|:-------:|:-----:|:-----------:|:-----------------:|
-| EnFormer-S |  224x224   |  310   | 78.9  |  8.1M   | 1.1G  | 1476.5img/s |    Coming Soon    |
-| EnFormer-B |  224x224   |  310   | 81.2  |  14.8M  | 2.5G  | 1075.5img/s |    Coming Soon    |
-| EnFormer-L |  224x224   |  310   | 82.6  |  29.4M  | 4.8G  | 621.7img/s  |    Coming Soon    |
+|    name    | resolution | epochs | acc@1 | #params | FLOPs | throughput  |                                                   model                                                 |
+|:----------:|:----------:|:------:|:-----:|:-------:|:-----:|:-----------:|:-------------------------------------------------------------------------------------------------------:|
+| EnFormer-S |  224x224   |  310   | 78.9  |  8.1M   | 1.1G  | 1476.5img/s |    [checkpoint](https://github.com/En-Former/EnFormer/releases/download/v1.0/enformer_small.pth.tar)    |
+| EnFormer-B |  224x224   |  310   | 81.2  |  14.8M  | 2.5G  | 1075.5img/s |    [checkpoint](https://github.com/En-Former/EnFormer/releases/download/v1.0/enformer_base.pth.tar)     |
+| EnFormer-L |  224x224   |  310   | 82.6  |  29.4M  | 4.8G  | 621.7img/s  |    [checkpoint](https://github.com/En-Former/EnFormer/releases/download/v1.0/enformer_large.pth.tar)    |
 
 ### COCO2017 fine-tuned models for object detection and instance segmentation
 |    name     |   Method   | Lr Schd | box mAP | mask mAP | #params | Fine-tuned Model  |
 |:-----------:|:----------:|:-------:|:-------:|:--------:|:-------:|:-----------------:|
-| EnFormer-S  | Mask R-CNN |   1x    |  41.3   |   38.1   |  28.2M  |    Coming Soon    |
-| EnFormer-B  | Mask R-CNN |   1x    |  42.8   |   39.3   |  35.0M  |    Coming Soon    |
-| EnFormer-L  | Mask R-CNN |   1x    |  44.0   |   40.0   |  50.3M  |    Coming Soon    |
+| EnFormer-S  | Mask R-CNN |   1x    |  41.3   |   38.1   |  28.2M  |    [checkpoint](https://github.com/En-Former/EnFormer/releases/download/v1.0/enformer_small_mask-rcnn.pth)    |
+| EnFormer-B  | Mask R-CNN |   1x    |  42.8   |   39.3   |  35.0M  |    [checkpoint](https://github.com/En-Former/EnFormer/releases/download/v1.0/enformer_base_mask-rcnn.pth)    |
+| EnFormer-L  | Mask R-CNN |   1x    |  44.0   |   40.0   |  50.3M  |    [checkpoint](https://github.com/En-Former/EnFormer/releases/download/v1.0/enformer_large_mask-rcnn.pth)    |
 
 ### ADE20K fine-tuned models for semantic segmentation
 |    name    |    Method    | Lr Schd | mIoU | #params | Fine-tuned Model  |
 |:----------:|:------------:|:-------:|:----:|:-------:|:-----------------:|
-| EnFormer-S | Semantic FPN |   80k   | 43.3 |  12.3M  |    Coming Soon    |
-| EnFormer-B | Semantic FPN |   80k   | 44.3 |  19.3M  |    Coming Soon    |
-| EnFormer-L | Semantic FPN |   80k   | 46.6 |  34.6M  |    Coming Soon    |
+| EnFormer-S | Semantic FPN |   80k   | 43.3 |  12.3M  |    [checkpoint](https://github.com/En-Former/EnFormer/releases/download/v1.0/enformer_small_fpn.pth)    |
+| EnFormer-B | Semantic FPN |   80k   | 44.3 |  19.3M  |    [checkpoint](https://github.com/En-Former/EnFormer/releases/download/v1.0/enformer_base_fpn.pth)    |
+| EnFormer-L | Semantic FPN |   80k   | 46.6 |  34.6M  |    [checkpoint](https://github.com/En-Former/EnFormer/releases/download/v1.0/enformer_large_fpn.pth)    |
 
 
 ## Installation
@@ -35,6 +35,8 @@ conda create -n enformer python=3.9
 conda activate enformer
 conda install pytorch==1.12.1 torchvision==0.13.1 cudatoolkit=11.3 -c pytorch
 pip install -r requirements.txt
+mim install mmcv-full==1.6.0
+pip install mmsegmentation==0.24.0 mmdet==2.24.0
 ```
 
 
@@ -57,5 +59,3 @@ This project is released under the [Apache 2.0 license](LICENSE).
 [//]: # (## Citation)
 
 [//]: # (To be continued...)
-
-
