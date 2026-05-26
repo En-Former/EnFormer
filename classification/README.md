@@ -47,3 +47,7 @@ bash scripts/eval.sh
 # Visualization
 bash scripts/visualize.sh
 ```
+
+
+## Acknowledgement
+Our classification implementation is mainly based on [PoolFormer](https://github.com/sail-sg/poolformer), [FEC](https://github.com/guikunchen/FEC/). Thank the authors for their wonderful works.
